@@ -7,25 +7,23 @@
     <body>
         <div class="container">
             <div >
-                <h1 class = "header_text">Do you wanna go out with me?</h1>
+                <h1 class = "header_text">HOW YOU DOIN?</h1>
             </div>
             <div class="gif_container">
-                <img src="https://media3.giphy.com/media/Fx8fRGgRTCePwvSHsy/200w.webp?cid=ecf05e47jlr5pzwb06qwfnkwhj5013gf3e5gmzddyy10zh1k&ep=v1_stickers_search&rid=200w.webp&ct=s" alt="Cute animated illustration">
+                <img src="https://media2.giphy.com/media/2wh8AaMZ2jtRseDQ3C/200w.webp?cid=ecf05e47sic0b7x0c8qvak83dnzaj92ejx8yo9zc7dozp0d9&ep=v1_stickers_search&rid=200w.webp&ct=s" alt="Cute animated illustration">
             </div>
             <div class = "buttons">
-                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
-                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                <button class="btn" id = "yesButton" onclick="nextPage1()">Yes</button>
+                <button class="btn" id="noButton"  onclick="nextPage2()">No</button>
                 <script>
-                    function nextPage() {
+                    function nextPage1() {
                         window.location.href = "yes.html";
                     }
+                     function nextPage2() {
+                        window.location.href = "no.html";
+                     }
                     
-                    function moveButton() {
-                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
-                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
-                        document.getElementById('noButton').style.left = `${x}px`;
-                        document.getElementById('noButton').style.top = `${y}px`;
-                    }
+                   
                 </script> 
             </div>
         </div>
